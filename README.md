@@ -1,4 +1,4 @@
-# suggestionBoxInstallation_kubik
+# Suggestion Box Installation - Kubik
 Thermal Printer through Arduino with Adafruit for Kubik installation
 
 The amazing people at [Kubik](http://www.kubikbcn.com/) are gifted a suggesstion box from the [MakingSense](http://making-sense.eu/) team for their generous hospitality.
