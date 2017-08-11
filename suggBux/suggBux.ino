@@ -102,6 +102,23 @@ void brandingPrint(){
   printer.underlineOff();
   printer.sleep();
 }
+void printerNewLine(){ //assumption of woke printer
+  printer.doubleHeightOn();
+  printer.println(F(" "));
+  printer.doubleHeightOff();
+}
+
+void printerInputArea(){ //assumption of woke printer
+  printer.doubleHeightOn();
+  printer.println(F("Por que te sientes asi?"));
+  printer.underlineOn();
+  printer.println(F("                        "));
+  printer.println(F("                        "));
+  printer.println(F("                        "));
+  printer.println(F("                        "));
+  printer.underlineOff();
+  printer.doubleHeightOff();
+}
 
 void positivePrint(){
   brandingPrint();
@@ -109,7 +126,8 @@ void positivePrint(){
   printer.wake();
   printerNewLine();
   printer.printBitmap(positive_width, positive_height, positive_data);
-  
+  printerInputArea();
+  printerNewLine();
   printer.feed(2);
   printer.sleep();
 }
@@ -119,6 +137,8 @@ void neutralPrint(){
   printer.wake();
   printerNewLine();
   printer.printBitmap(neutral_width, neutral_height, neutral_data);
+  printerInputArea();
+  printerNewLine();
   printer.feed(2);
   printer.sleep();
 }
@@ -128,13 +148,8 @@ void negativePrint(){
   printer.wake();
   printerNewLine();
   printer.printBitmap(negative_width, negative_height, negative_data);
+  printerInputArea();
+  printerNewLine();
   printer.feed(2);
   printer.sleep();
 }
-
-void printerNewLine(){ //assumption of woke printer
-  printer.doubleHeightOn();
-  printer.println(F(" "));
-  printer.doubleHeightOff();
-}
-
