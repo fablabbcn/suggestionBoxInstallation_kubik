@@ -96,10 +96,7 @@ void brandingPrint(){
   printer.justify('C');
   printer.boldOn();
   printer.println(F("Primer Coworking de Barcelona"));
-  printer.boldOff(); 
-  printer.underlineOn();
-  printer.println(F("http://www.kubikbcn.com/"));
-  printer.underlineOff();
+  printer.boldOff();
   printer.sleep();
 }
 void printerNewLine(){ //assumption of woke printer
