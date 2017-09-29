@@ -13,9 +13,9 @@
 SoftwareSerial mySerial(RX_PIN, TX_PIN);  // Declare SoftwareSerial obj first
 Adafruit_Thermal printer(&mySerial);      // Pass addr to printer constructor
 
-const int bp1 = 2; //positive
+const int bp1 = 4; //positive
 const int bp2 = 3; //neutral
-const int bp3 = 4; //negative
+const int bp3 = 2; //negative
 
 bool idleState = true;
 
