@@ -6,3 +6,6 @@ The amazing people at [Kubik](http://www.kubikbcn.com/) are gifted a suggesstion
 In this repo are the build specs, docs and files of the box.
 
 For information regarding the Arduino code, [check out the tutorial which guided our process](https://learn.adafruit.com/mini-thermal-receipt-printer/overview)
+
+Troubleshooting:
+printer output - https://forums.adafruit.com/viewtopic.php?f=19&t=34751
